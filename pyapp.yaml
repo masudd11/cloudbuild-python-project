@@ -28,7 +28,7 @@ spec:
 
       - name: pycontainer
 
-        image: gcr.io/kubernetes-gcp-383911/pyproject:v3
+        image: gcr.io/kubernetes-gcp-383911/pyproject:v2
 
         ports:
 
