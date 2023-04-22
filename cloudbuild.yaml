@@ -13,7 +13,7 @@ steps:
     - 'apply'
     - '--filename=${_FILE_PATH}'
     - '--location=${_LOCATION}'
-    - '--image=${_IMAGE_NAME}'
+    # - '--image=${_IMAGE_NAME}'
     - '--cluster=${_CLUSTER_NAME}'
 
 substitutions:
@@ -23,7 +23,7 @@ substitutions:
    _LOCATION: us-central1-b
    _IMAGE_NAME: gcr.io/kubernetes-gcp-383911/pyproject:${_VERSION}
    _CLUSTER_NAME: my-gke-cluster
-   _VERSION: v1
+   _VERSION: v2
 
 options:
     # substitutions_option: 'ALLOW_LOOSE'
