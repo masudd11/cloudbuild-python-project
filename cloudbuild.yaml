@@ -13,19 +13,17 @@ steps:
     - 'apply'
     - '--filename=${_FILE_PATH}'
     - '--location=${_LOCATION}'
-    # - '--image=${_IMAGE_NAME}'
+    - '--image=${_IMAGE_NAME}'
     - '--cluster=${_CLUSTER_NAME}'
 
-images:
-  - "${_IMAGE_NAME}:${_VERSION}"
 substitutions:
-   _PROJECT: devops-374608
+   _PROJECT: kubernetes-gcp-383911
    _REPO_NAME: github_masudd11_python-project
    _FILE_PATH: pyapp.yaml
-   _LOCATION: us-central1-c
-   _IMAGE_NAME: gcr.io/devops-374608/pyproject
-   _CLUSTER_NAME: cluster-1
-   _VERSION: v3.0
+   _LOCATION: us-central1-b
+   _IMAGE_NAME: gcr.io/kubernetes-gcp-383911/pyproject:${_VERSION}
+   _CLUSTER_NAME: my-gke-cluster
+   _VERSION: v1
 
 options:
     # substitutions_option: 'ALLOW_LOOSE'

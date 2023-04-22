@@ -10,9 +10,6 @@ spec:
 
   replicas: 1
 
-  strategy:
-    type: Recreate
-
   selector:
      matchLabels:
 
@@ -31,7 +28,7 @@ spec:
 
       - name: pycontainer
 
-        image: gcr.io/devops-374608/pyproject:v3.0
+        image: gcr.io/kubernetes-gcp-383911/pyproject:latest
 
         ports:
 
