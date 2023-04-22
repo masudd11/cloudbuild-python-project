@@ -21,9 +21,9 @@ substitutions:
    _REPO_NAME: github_masudd11_python-project
    _FILE_PATH: pyapp.yaml
    _LOCATION: us-central1-b
-   _IMAGE_NAME: gcr.io/kubernetes-gcp-383911/pyproject:${_VERSION}
+  #  _IMAGE_NAME: gcr.io/kubernetes-gcp-383911/pyproject:${_VERSION}
    _CLUSTER_NAME: my-gke-cluster
-   _VERSION: v2
+  #  _VERSION: v2
 
 options:
     # substitutions_option: 'ALLOW_LOOSE'
