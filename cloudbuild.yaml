@@ -23,7 +23,7 @@ substitutions:
    _LOCATION: us-central1-b
    _IMAGE_NAME: gcr.io/kubernetes-gcp-383911/pyproject:${_VERSION}
    _CLUSTER_NAME: my-gke-cluster
-   _VERSION: v3
+   _VERSION: $SHORT_SHA
 
 options:
     # substitutions_option: 'ALLOW_LOOSE'
